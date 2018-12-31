@@ -11,15 +11,14 @@
     "url": "https://github.com/zrrrzzt/zrrrzzt.git"
   },
   "scripts": {
-    "prepare": "npm run build",
-    "build": "node build.js",
-    "dev": "npm run build && node ./bin/card.js",
+    "dev": "node ./bin/card.js",
     "lint": "standard",
     "test": "standard && npm audit && ava",
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
-    "standard-fix": "standard --fix"
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "card",
@@ -32,13 +31,14 @@
   "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
   "license": "MIT",
   "files": [
-    "bin/card.js",
-    "bin/output"
+    "bin/card.js"
   ],
+  "dependencies": {
+    "boxen": "2.1.0",
+    "chalk": "2.4.1"
+  },
   "devDependencies": {
     "ava": "1.0.1",
-    "boxen": "2.1.0",
-    "chalk": "2.4.1",
     "coveralls": "3.0.2",
     "nyc": "13.1.0",
     "standard": "12.0.1"
