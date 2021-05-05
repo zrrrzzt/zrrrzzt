@@ -17,7 +17,7 @@ const data = {
   name: chalk.white('              Geir Gåsodden'),
   handle: chalk.white('zrrrzzt'),
   work: chalk.white('Senior Developer at Arbeids- og velferdsetaten, NAV IT'),
-  opensource: chalk.white('Alheimsins ') + chalk.white('*'),
+  opensource: chalk.white('Alheimsins, Roedt'),
   twitter: chalk.cyan('https://twitter.com/') + chalk.cyan('zrrrzzt'),
   npm: chalk.cyan('https://npmjs.com/') + chalk.cyan('~zrrrzzt'),
   github: chalk.cyan('https://github.com/') + chalk.cyan('zrrrzzt'),
